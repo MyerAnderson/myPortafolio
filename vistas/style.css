@@ -87,9 +87,6 @@ section{
     justify-content: space-between;
     position: relative;
 }
-.cabecera .barra_navegacion ul i{
-    
-}
 .cabecera .barra_navegacion ul li{
     list-style: none;
     height: 23px;
@@ -391,8 +388,6 @@ section{
 .conocimiento_content .conocimiento div img{
     height: 70px;
     margin-left: 8em;
-}
-.burbujas{
 }
 
 /*Seccion servicios*/
