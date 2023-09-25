@@ -302,7 +302,7 @@ section{
 .sobreMi_content .foto::after{
     content: "";
     position: absolute;
-    background-image: url();
+    background-image: url("");
     background-size: cover;
     background-repeat: no-repeat;
     height: 280px;
