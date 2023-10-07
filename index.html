@@ -6,12 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myer Anderson</title>
     <link rel="stylesheet" href="./vistas/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/114555fc60.js" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js">
 </head>
 <body>
-    <div class="cabecera">
+    
+    <nav class="cabecera">
         <div class="cabecera_content content">
             <div class="logo">
                 <img src="./vistas/recursos/logo2.png" alt="">
@@ -29,25 +37,25 @@
             </div>
             <i class="barr fa-solid fa-bars"></i>  
         </div>
-    </div>
+    </nav>
     <div class="slide view" id="inicio">
         <div class="slides content">
-            <div class="slide_content">
+            <div class="slide_content" data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="300" data-aos-offset="0">
                 <h1>Hola ¡¡¡</h1>
                 <h1>Soy Myer <span>Anderson</span></h1>
                 <h5>Un <span class="typed"></span></span></h5>
-                <button class="btnSobreMi">
+                <button onclick="" class="btnSobreMi">
                     <span>Sobre mi</span>
                     <i class="fa-solid fa-turn-down"></i>
                 </button>
-                <div class="slide_enlaces">
+                <div onClick="" class="slide_enlaces" data-aos="fade-up" data-aos-duration="1500">
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
                     <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
                 </div> 
             </div>
-            <div class="slide_content2">
+            <div data-aos="zoom-out-down" data-aos-duration="1500" class="slide_content2" >
                 <img src="./vistas/recursos/undraw_developer_activity_re_39tg.svg" alt="">
             </div>
         </div>
@@ -63,8 +71,8 @@
             <div></div>
             <div></div>
         </div>
-        <div class="sobreMi_content content">
-            <div class="foto">
+        <div class="sobreMi_content content" >
+            <div class="foto" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-duration="800">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" id="blobSvg">
                     <defs>
                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -83,15 +91,15 @@
                 <p>
                     soy un joven apacionado por la tecnologia y el desarrollo, estudie una carrera tecnica en una entidad publica donde evolucione mis habilidades de informatica tecnica y de programacion, desempeñe labores de asitencia en TI, aporté en la creacion de software y aplicaciones moviles, tambien diseñe y programe sistios webs como freelance.
                 </p>
-                <div class="infoBtn">
-                    <button class="btnCv">
+                <div class="infoBtn" data-aos="fade-up" data-aos-duration="800">
+                    <a class="btnCv" href="./cv.pdf" target="_blank">
                         Descargar Curriculum
                         <i class="fa-sharp fa-solid fa-download"></i>
-                    </button>
-                    <button class="btnCv">
+                    </a>
+                    <a class="btnCvBn" href="./cv-bn.pdf" target="_blank">
                         Descargar Curriculum B/N
                         <i class="fa-sharp fa-solid fa-download"></i>
-                    </button>
+                    </a>
                 </div>
             </div> 
         </div>
@@ -102,7 +110,7 @@
                 <h3 class="titulo"><i class="fa-solid fa-graduation-cap"></i>[CONOCIMIENTOS]</h3>
                 <h5 ><span>TENGO CONOCIMIENTOS</span> EN</h5>
             </div>        
-            <div class="con_Front conocimiento">
+            <div class="con_Front conocimiento" data-aos="fade-up-right">
                 <i class="fa-sharp fa-solid fa-window-maximize">
                     <h5>&nbsp Fronted</h5>
                 </i>
@@ -111,7 +119,7 @@
                     <img src="./vistas/recursos/css-3.png" alt="">
                 </div>
             </div>
-            <div class="con_back conocimiento" >
+            <div class="con_back conocimiento" data-aos="fade-up-right" data-aos-delay="100">
                 <i class="fa-solid fa-server">
                     <h5>&nbsp Backend</h5>
                 </i>
@@ -121,7 +129,7 @@
                     <img src="./vistas/recursos/piton.png" alt="">
                 </div>
             </div>
-            <div class="con_des conocimiento">
+            <div class="con_des conocimiento" data-aos="fade-up-right"data-aos-delay="200">
                 <i class="fa-sharp fa-solid fa-pen-nib">
                     <h5>&nbsp Diseño</h5>
                 </i>
@@ -130,7 +138,7 @@
                     <img src="./vistas/recursos/ilustrador.png" alt="">
                 </div>
             </div>
-            <div class="con_otros conocimiento">
+            <div class="con_otros conocimiento" data-aos="fade-up-right" data-aos-delay="300">
                 <i>...
                     <h5>&nbsp Otros</h5>
                 </i>
@@ -143,7 +151,7 @@
     </section>
     <section class="main_servicios view" id="servicios">
         <div class="servicios_content content">
-            <div class="sev analisis m">
+            <div class="sev analisis m" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                 <div class="analisis_ref">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <h3>[ANLISIS]</h3>
@@ -152,7 +160,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sev maquetado">
+            <div class="sev maquetado" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
                 <div class="maquetado_ref">
                     <i class="fa-sharp fa-solid fa-pencil"></i>
                     <h3>[MAQUETADO]</h3>
@@ -161,7 +169,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sev desarrollo m">
+            <div class="sev desarrollo m" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="800">
                 <div class="desarrollo_ref">
                     <i class="fa-sharp fa-solid fa-gears"></i>
                     <h3>[DESARROLLO]</h3>
@@ -170,7 +178,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sev publicacion">
+            <div class="sev publicacion" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="800">
                 <div class="publi_ref">
                     <i class="fa-solid fa-laptop"></i>
                     <h3>[PUBLICACION]</h3>
@@ -183,49 +191,201 @@
     </section>
     <section class="main_portafolio view" id="portafolio">
         <div class="portafolio_content content">
-            <h3 class="titulo"><i class="fa-solid fa-briefcase"></i>[PORTAFOLIO]</h3>
-            <h5>Esta es una muestra de mi experiencia, algunos de mis trabajos elaborados en mi etapa de freelance.</h5>
-            <div></div>
+            <h3 class="titulo "><i class="fa-solid fa-briefcase"></i>[PORTAFOLIO]</h3>
+            <h5 class="">ESTA ES UNA MUESTRA DE MI EXPERIENCIA, <span>ALGUNOS DE MIS TRABAJOS ELABORADOS EN MI ETAPA COMO FREELANCE</span></h5>
+            <div class="splide">
+                <div class="splide__track">
+                      <div class="splide__list">
+                            <div class="proyect splide__slide" data-aos="zoom-in">
+                                <div class="ftss">
+                                    <img src="./vistas/fotos/mi_portafolio.png" alt="">
+                                </div>
+                                <div class="visible">
+                                    <div class="titulo">
+                                        <h4>&#123&#32Tienda Virtual&#32&#125</h4>
+                                    </div>
+                                    <div class="info_proyect">
+                                        <h4>Caracteristicas:</h4>
+                                        <p>hago el uso de php y entre otras cosas mas tambien podemos ver que esta fallalndsandjasdk Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio laborum molestias fugiat, corrupti voluptate tempore </p>
+                                        <div class="buttons">
+                                            <a href="">github<i class="fa-brands fa-github"></i></a>
+                                            <a href="">Ir al sitio<i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="proyect splide__slide" data-aos="zoom-in">
+                                <div class="ftss">
+                                    <img src="./vistas/fotos/Llykatel_eirl.png" alt="">
+                                </div>
+                                <div class="visible">
+                                    <div class="titulo">
+                                        <h4>&#123&#32Tienda Virtual&#32&#125</h4>
+                                    </div>
+                                    <div class="info_proyect">
+                                        <h4>Caracteristicas:</h4>
+                                        <p>hago el uso de php y entre otras cosas mas tambien podemos ver que esta fallalndsandjasdk Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio laborum molestias fugiat, corrupti voluptate tempore </p>
+                                        <div class="buttons">
+                                            <a href="">github<i class="fa-brands fa-github"></i></a>
+                                            <a href="">Ir al sitio<i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="proyect splide__slide" data-aos="zoom-in">
+                                <div class="ftss">
+                                    <img src="./vistas/fotos/AndesSolutionsGroup.png" alt="">
+                                </div>
+                                <div class="visible">
+                                    <div class="titulo">
+                                        <h4>&#123&#32Tienda Virtual&#32&#125</h4>
+                                    </div>
+                                    <div class="info_proyect">
+                                        <h4>Caracteristicas:</h4>
+                                        <p>hago el uso de php y entre otras cosas mas tambien podemos ver que esta fallalndsandjasdk Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio laborum molestias fugiat, corrupti voluptate tempore </p>
+                                        <div class="buttons">
+                                            <a href="">github<i class="fa-brands fa-github"></i></a>
+                                            <a href="">Ir al sitio<i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="proyect splide__slide" data-aos="zoom-in">
+                                <div class="ftss">
+                                    <img src="./vistas/fotos/plataforma_movie.png" alt="">
+                                </div>
+                                <div class="visible">
+                                    <div class="titulo">
+                                        <h4>&#123&#32Tienda Virtual&#32&#125</h4>
+                                    </div>
+                                    <div class="info_proyect">
+                                        <h4>Caracteristicas:</h4>
+                                        <p>hago el uso de php y entre otras cosas mas tambien podemos ver que esta fallalndsandjasdk Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio laborum molestias fugiat, corrupti voluptate tempore </p>
+                                        <div class="buttons">
+                                            <a href="">github<i class="fa-brands fa-github"></i></a>
+                                            <a href="">Ir al sitio<i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                            <div class="proyect splide__slide" data-aos="zoom-in">
+                                <div class="ftss">
+                                    <img src="./vistas/fotos/pcTEx.png" alt="">
+                                </div>
+                                <div class="visible">
+                                    <div class="titulo">
+                                        <h4>&#123&#32Tienda Virtual&#32&#125</h4>
+                                    </div>
+                                    <div class="info_proyect">
+                                        <h4>Caracteristicas:</h4>
+                                        <p>hago el uso de php y entre otras cosas mas tambien podemos ver que esta fallalndsandjasdk Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio laborum molestias fugiat, corrupti voluptate tempore </p>
+                                        <div class="buttons">
+                                            <a href="">github<i class="fa-brands fa-github"></i></a>
+                                            <a href="">Ir al sitio<i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                            
+                            <div class="proyect splide__slide" data-aos="zoom-in">
+                                <div class="ftss">
+                                    <img src="./vistas/fotos/matec.png" alt="">
+                                </div>
+                                <div class="visible">
+                                    <div class="titulo">
+                                        <h4>&#123&#32Tienda Virtual&#32&#125</h4>
+                                    </div>
+                                    <div class="info_proyect">
+                                        <h4>Caracteristicas:</h4>
+                                        <p>hago el uso de php y entre otras cosas mas tambien podemos ver que esta fallalndsandjasdk Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam optio laborum molestias fugiat, corrupti voluptate tempore </p>
+                                        <div class="buttons">
+                                            <a href="">github<i class="fa-brands fa-github"></i></a>
+                                            <a href="">Ir al sitio<i class="fa-solid fa-angle-right"></i></a>
+                                        </div>
+                                    </div>
+                                </div>      
+                            </div>
+                      </div>
+                </div>
+            </div>
+            <div class="port">
+                
+            </div>
         </div> 
     </section>
     <section class="main_contacto view" id="contacto">
         <div class="contacto_content content">
-            <div class="dats">
+            <div class="dats" >
                 <h3 class="titulo"> <i class="fa-solid fa-address-book"></i>[CONTACTAME]</h3>
                 <h5>TELEFONO : 916840451</h5>
                 <h5>LIMA - PERU</h5>
                 <h5>Andersonalvarado078@gmail.com</h5>
-                <div class="social">
+                <div class="social" data-aos="fade-up" data-aos-duration="800">
                     <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
                     <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-facebook"></i></a>
                     <a href="https://www.github.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-github"></i></a>
                     <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-square-twitter"></i></a>
                 </div>
             </div>
-            <div class="contacto_formulario">
+            <div class="contacto_formulario" data-aos="fade-left" data-aos-duration="800">
                 <form action="" class="formulario" method="post">
                     <div class="name_tel">
                         <div>
                             <h5>Nombres y Apellido</h5>
-                            <input type="text">
+                            <input name="nombres" type="text" placeholder="Nombres y Apellidos">
                         </div>
                         <div>
                             <h5>Telefono</h5>
-                            <input type="text">
+                            <input name="telefono" type="tel" placeholder="000-000-000">
                         </div>
                     </div>
                     <h5>Email</h5>
-                    <input type="text">
+                    <input name="email" type="text" placeholder="myeranderson@gmail.com">
                     <h5>Mensaje</h5>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
-                    <input type="submit" value="ENVIAR" class="btnEnviar">
+                    <textarea name="text" cols="30" rows="10"></textarea>
+                    <input type="submit" value="ENVIAR" class="btn inhabilitado">
                 </form>
             </div>
         </div>
     </section>
     <section class="copyrigth">
-        <h3>&copy 2023</h3>
+        <h3>&copy by Myer Anderson</h3>
     </section>
     <script src="./vistas/main.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script>
+        var splide = new Splide( '.splide', {
+            perPage: 3,
+            gap    : '2rem',
+            padding : '20px',
+            breakpoints: {
+                640: {
+                perPage: 2,
+                gap    : '.7rem',
+                height : '10rm',
+                },
+                480: {
+                perPage: 1,
+                gap    : '.7rem',
+                height : '14rm',
+                },
+            },
+        } );
+
+        splide.on( 'overflow', function ( isOverflow ) {
+        splide.options = {
+            arrows    : isOverflow,
+            pagination: isOverflow,
+            drag      : isOverflow,
+        };
+        } );
+
+        splide.mount();
+    </script>
 </body>
 </html>
