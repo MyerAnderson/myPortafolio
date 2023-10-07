@@ -1091,8 +1091,12 @@ section{
         margin-left: 10px;
         height: 30px;
         font-size: 6.5pt;
-    }
+        z-index: 107;
 
+    }
+    .burbujas{
+        z-index: -1;
+    }
 
     /*seccion conocimientos*/
     .main_conocimientos .conocimiento_content{
